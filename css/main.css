@@ -1,0 +1,149 @@
+.btn-mac, .btn-ios {
+  padding: 0.8rem 2.5rem;
+  border-radius: 100px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem;
+  display: inline-block;
+  opacity: 9;
+}
+
+.btn-ios {
+  background: #26baa4;
+}
+.btn-mac {
+  background: #6173ff;
+}
+
+p {
+  color: #9fabb2;
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem 0;
+}
+
+.row {
+  text-align: center;
+  margin: auto;
+  padding-top: 4rem 0;
+}
+.row p {
+  width: 50%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.img {
+  width: 700px;
+}
+
+@media (max-width: 776px) {
+  .row p {
+    width: 100%;
+  }
+
+  .img {
+    width: 100%;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+#hero {
+  background-image: url(/images/bg-header-desktop.png);
+  height: 100vh;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#hero .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+#hero .content p {
+  width: 60%;
+  margin: auto;
+  color: #9fabb2;
+  padding: 2rem;
+}
+#hero .content img {
+  padding-bottom: 4rem;
+}
+
+#section-desktop .flex-columns {
+  display: flex;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
+#section-desktop .flex-columns .box {
+  margin: 2rem 6rem;
+}
+#section-desktop .flex-columns .box h3 {
+  padding: 0.8rem 0;
+}
+
+#section-mobile img {
+  display: block;
+  margin: auto;
+  padding-top: 4rem;
+}
+
+#section-workflow .flex-columns {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-right: 7rem;
+  padding: 5rem;
+}
+#section-workflow .flex-columns .box h3 {
+  padding: 1rem 0;
+}
+
+@media (max-width: 766px) {
+  body {
+    font-size: 16px;
+  }
+
+  #hero {
+    background-image: url(/images/bg-header-mobile.png);
+  }
+  #hero .content p {
+    width: 100%;
+  }
+  #hero .content h1 {
+    font-size: 1.8rem;
+  }
+
+  #section-desktop .flex-columns {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
+  #section-desktop .flex-columns img {
+    width: 100%;
+  }
+  #section-desktop .flex-columns .box {
+    margin: 2rem 1rem;
+  }
+  #section-desktop .flex-columns .box h3 {
+    padding: 0.8rem 0;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

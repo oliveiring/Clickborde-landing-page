@@ -1,0 +1,62 @@
+
+$colors:(
+  --strong-syan:hsl(171, 66%, 44%),
+  --light-blue:hsl(233, 100%, 69%),
+  --dark-grayish: hsl(210, 10%, 33%),
+  --Grayish-Blue:hsl(201, 11%, 66%)
+);
+
+@function color($colorr){
+  @return map-get($colors ,$colorr)
+};
+
+%btn-share{
+  padding:0.8rem 2.5rem;
+  border-radius:100px;
+  color: #fff;
+  font-size:1rem;
+  font-weight: 600;
+  margin:1rem;
+  display: inline-block;
+  opacity:9;
+ 
+}
+
+.btn{
+  &-ios{
+    @extend %btn-share;
+    background:color(--strong-syan);
+  }
+  &-mac{
+    @extend %btn-share;
+    background:color(--light-blue);
+  }
+}
+
+p{color:color(--Grayish-Blue);}
+
+
+a{text-decoration:none;}
+
+section{padding:2rem 0;}
+
+.row{
+  text-align: center;
+  margin:auto;
+  padding-top: 4rem 0;
+  p{
+    width:50%;
+    margin: auto;
+    padding:2rem 0;
+  }
+}
+.img{width: 700px;}
+
+@media(max-width:776px){
+  .row{
+    p{width:100%;}
+  }
+  .img{width:100%;}
+}
+
+

@@ -1,0 +1,111 @@
+@use '../scss/global' as c;
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 18px;
+  font-family: 'Bai Jamjuree', sans-serif;
+}
+
+@mixin flex-columns {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+#hero{
+  background-image: url(/images/bg-header-desktop.png);
+  height: 100vh;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    
+    p{
+      width: 60%;
+      margin: auto;
+      color:c.color(--Grayish-Blue);
+      padding:2rem;
+    } 
+    img{padding-bottom: 4rem;}
+  }
+}
+
+#section-desktop{
+  .flex-columns{
+    @include flex-columns();
+    padding:5rem 0;
+    .box{
+      margin:2rem 6rem;
+      h3{
+        padding:0.8rem 0;
+      }
+    }
+  }
+}
+
+#section-mobile{
+  img{
+    display: block;
+    margin: auto;
+    padding-top: 4rem;
+  }
+}
+
+#section-workflow{
+  .flex-columns{
+    @include flex-columns();
+    text-align: center;
+    margin-right:7rem;
+    padding: 5rem;
+    .box{
+      h3{
+        padding:1rem 0;
+      }
+     
+    }
+  }
+}
+@media(max-width:766px){
+  body{font-size: 16px;}
+
+  @mixin flex-columns {flex-direction: column;}
+
+  #hero{
+    background-image: url(/images/bg-header-mobile.png);
+    .content{
+      p{
+        width:100%;
+      } 
+      h1{
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  #section-desktop{
+    .flex-columns{
+      @include flex-columns();
+      padding:5rem 0;
+      img{
+        width: 100%;
+      }
+      .box{
+        margin:2rem 1rem;
+        h3{
+          padding:0.8rem 0;
+        }
+      }
+    }
+  }
+
+}
