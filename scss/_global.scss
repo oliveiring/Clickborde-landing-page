@@ -1,4 +1,4 @@
-
+/*************Button-colors**************/
 $colors:(
   --strong-syan:hsl(171, 66%, 44%),
   --light-blue:hsl(233, 100%, 69%),
@@ -9,7 +9,7 @@ $colors:(
 @function color($colorr){
   @return map-get($colors ,$colorr)
 };
-
+/*************BTN**************/
 %btn-share{
   padding:0.8rem 2.5rem;
   border-radius:100px;
@@ -18,9 +18,13 @@ $colors:(
   font-weight: 600;
   margin:1rem;
   display: inline-block;
-  opacity:9;
- 
+  opacity:10;
+  transition: all 1s;
+  &:hover{
+    opacity:0.3;
+  }
 }
+
 
 .btn{
   &-ios{
@@ -35,7 +39,7 @@ $colors:(
 
 p{color:color(--Grayish-Blue);}
 
-
+/*************setting**************/
 a{text-decoration:none;}
 
 section{padding:2rem 0;}
@@ -51,7 +55,7 @@ section{padding:2rem 0;}
   }
 }
 .img{width: 700px;}
-
+/*************Media-Queries**************/
 @media(max-width:776px){
   .row{
     p{width:100%;}

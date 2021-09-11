@@ -6,7 +6,11 @@
   font-weight: 600;
   margin: 1rem;
   display: inline-block;
-  opacity: 9;
+  opacity: 10;
+  transition: all 1s;
+}
+.btn-mac:hover, .btn-ios:hover {
+  opacity: 0.3;
 }
 
 .btn-ios {
@@ -143,6 +147,15 @@ body {
   }
   #section-desktop .flex-columns .box h3 {
     padding: 0.8rem 0;
+  }
+
+  #section-workflow .flex-columns {
+    flex-direction: column;
+    margin-right: 0;
+    padding: 1rem;
+  }
+  #section-workflow .flex-columns .box {
+    margin-top: 3rem;
   }
 }
 

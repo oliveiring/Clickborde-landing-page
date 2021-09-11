@@ -1,3 +1,4 @@
+/************Setting-up**************/
 @use '../scss/global' as c;
 *{
   padding:0;
@@ -15,7 +16,7 @@ body{
   justify-content: space-around;
   
 }
-
+/*************Hero**************/
 #hero{
   background-image: url(/images/bg-header-desktop.png);
   height: 100vh;
@@ -39,7 +40,7 @@ body{
     img{padding-bottom: 4rem;}
   }
 }
-
+/*************Desktop**************/
 #section-desktop{
   .flex-columns{
     @include flex-columns();
@@ -52,7 +53,7 @@ body{
     }
   }
 }
-
+/*************Mobile**************/
 #section-mobile{
   img{
     display: block;
@@ -60,7 +61,7 @@ body{
     padding-top: 4rem;
   }
 }
-
+/*************Workflow**************/
 #section-workflow{
   .flex-columns{
     @include flex-columns();
@@ -75,6 +76,8 @@ body{
     }
   }
 }
+/*************Media-Queries**************/
+
 @media(max-width:766px){
   body{font-size: 16px;}
 
@@ -91,7 +94,7 @@ body{
       }
     }
   }
-
+  /*Desktop*/
   #section-desktop{
     .flex-columns{
       @include flex-columns();
@@ -104,6 +107,18 @@ body{
         h3{
           padding:0.8rem 0;
         }
+      }
+    }
+  }
+
+  /*Workflow*/
+  #section-workflow{
+    .flex-columns{
+      @include flex-columns();
+      margin-right:0;
+      padding:1rem;
+      .box{
+        margin-top: 3rem;
       }
     }
   }
