@@ -1,3 +1,5 @@
+/*************Button-colors**************/
+/*************BTN**************/
 .btn-mac, .btn-ios {
   padding: 0.8rem 2.5rem;
   border-radius: 100px;
@@ -24,8 +26,13 @@ p {
   color: #9fabb2;
 }
 
+/*************setting**************/
 a {
   text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 section {
@@ -47,6 +54,7 @@ section {
   width: 700px;
 }
 
+/*************Media-Queries**************/
 @media (max-width: 776px) {
   .row p {
     width: 100%;
@@ -56,6 +64,7 @@ section {
     width: 100%;
   }
 }
+/************Setting-up**************/
 * {
   padding: 0;
   margin: 0;
@@ -67,6 +76,7 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+/*************Hero**************/
 #hero {
   background-image: url(/images/bg-header-desktop.png);
   height: 100vh;
@@ -91,6 +101,7 @@ body {
   padding-bottom: 4rem;
 }
 
+/*************Desktop**************/
 #section-desktop .flex-columns {
   display: flex;
   justify-content: space-around;
@@ -103,23 +114,77 @@ body {
   padding: 0.8rem 0;
 }
 
+/*************Mobile**************/
 #section-mobile img {
   display: block;
   margin: auto;
   padding-top: 4rem;
 }
 
+/*************Workflow**************/
 #section-workflow .flex-columns {
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-right: 7rem;
-  padding: 5rem;
+  padding: 5rem 0;
 }
 #section-workflow .flex-columns .box h3 {
   padding: 1rem 0;
 }
 
+/*************Logos**************/
+#section-logos {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5rem 0;
+}
+
+/*************Keyboard**************/
+#section-keyboard {
+  padding: 10rem 0;
+}
+
+/*************Footer**************/
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background: #f1f1f1;
+  padding: 2rem 0;
+}
+#footer .box:last-child ul {
+  display: flex;
+}
+#footer .box:last-child ul li {
+  padding: 0 0.6rem;
+}
+#footer .box:last-child ul li a {
+  font-size: 1.5rem;
+  color: #4c545d;
+}
+#footer .box:last-child ul li a:hover {
+  color: #26baa4;
+}
+#footer .box:nth-child(1) img {
+  width: 50px;
+}
+#footer .box:nth-child(2) ul li,
+#footer .box:nth-child(3) ul li,
+#footer .box:nth-child(4) ul li {
+  padding-bottom: 1rem;
+}
+#footer .box:nth-child(2) ul li a,
+#footer .box:nth-child(3) ul li a,
+#footer .box:nth-child(4) ul li a {
+  color: #4c545d;
+}
+#footer .box:nth-child(2) ul li a:hover,
+#footer .box:nth-child(3) ul li a:hover,
+#footer .box:nth-child(4) ul li a:hover {
+  color: #26baa4;
+}
+
+/*************Media-Queries**************/
 @media (max-width: 766px) {
   body {
     font-size: 16px;
@@ -135,6 +200,7 @@ body {
     font-size: 1.8rem;
   }
 
+  /*Desktop*/
   #section-desktop .flex-columns {
     flex-direction: column;
     padding: 5rem 0;
@@ -149,6 +215,7 @@ body {
     padding: 0.8rem 0;
   }
 
+  /*Workflow*/
   #section-workflow .flex-columns {
     flex-direction: column;
     margin-right: 0;
@@ -156,6 +223,43 @@ body {
   }
   #section-workflow .flex-columns .box {
     margin-top: 3rem;
+  }
+
+  #section-logos {
+    flex-direction: column;
+    align-items: center;
+  }
+  #section-logos figure {
+    padding: 3rem 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #footer ul {
+    padding: 1rem 0;
+  }
+  #footer .box:nth-child(2) ul li,
+#footer .box:nth-child(3) ul li,
+#footer .box:nth-child(4) ul li {
+    padding-bottom: 0rem;
+  }
+}
+@media (max-width: 1024px) {
+  #section-desktop .flex-columns {
+    display: flex;
+    justify-content: space-around;
+    padding: 5rem 0;
+  }
+  #section-desktop .flex-columns img {
+    width: 100%;
+  }
+  #section-desktop .flex-columns .box {
+    margin: 1rem;
+  }
+  #section-desktop .flex-columns .box h3 {
+    padding: 0.8rem 0;
   }
 }
 
