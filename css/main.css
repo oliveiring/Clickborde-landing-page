@@ -146,41 +146,41 @@ body {
 }
 
 /*************Footer**************/
-#footer {
+#footer #footer-nav {
   display: flex;
   justify-content: space-around;
   background: #f1f1f1;
   padding: 2rem 0;
 }
-#footer .box:last-child ul {
+#footer #footer-nav .box:last-child ul {
   display: flex;
 }
-#footer .box:last-child ul li {
+#footer #footer-nav .box:last-child ul li {
   padding: 0 0.6rem;
 }
-#footer .box:last-child ul li a {
+#footer #footer-nav .box:last-child ul li a {
   font-size: 1.5rem;
   color: #4c545d;
 }
-#footer .box:last-child ul li a:hover {
+#footer #footer-nav .box:last-child ul li a:hover {
   color: #26baa4;
 }
-#footer .box:nth-child(1) img {
+#footer #footer-nav .box:nth-child(1) img {
   width: 50px;
 }
-#footer .box:nth-child(2) ul li,
-#footer .box:nth-child(3) ul li,
-#footer .box:nth-child(4) ul li {
+#footer #footer-nav .box:nth-child(2),
+#footer #footer-nav .box:nth-child(3),
+#footer #footer-nav .box:nth-child(4) {
   padding-bottom: 1rem;
 }
-#footer .box:nth-child(2) ul li a,
-#footer .box:nth-child(3) ul li a,
-#footer .box:nth-child(4) ul li a {
+#footer #footer-nav .box:nth-child(2) ul li a,
+#footer #footer-nav .box:nth-child(3) ul li a,
+#footer #footer-nav .box:nth-child(4) ul li a {
   color: #4c545d;
 }
-#footer .box:nth-child(2) ul li a:hover,
-#footer .box:nth-child(3) ul li a:hover,
-#footer .box:nth-child(4) ul li a:hover {
+#footer #footer-nav .box:nth-child(2) ul li a:hover,
+#footer #footer-nav .box:nth-child(3) ul li a:hover,
+#footer #footer-nav .box:nth-child(4) ul li a:hover {
   color: #26baa4;
 }
 
@@ -233,17 +233,20 @@ body {
     padding: 3rem 0;
   }
 
-  #footer {
+  #footer #footer-nav {
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
   }
-  #footer ul {
-    padding: 1rem 0;
+  #footer #footer-nav .box:nth-child(1),
+#footer #footer-nav .box:last-child {
+    padding-bottom: 1rem;
   }
-  #footer .box:nth-child(2) ul li,
-#footer .box:nth-child(3) ul li,
-#footer .box:nth-child(4) ul li {
-    padding-bottom: 0rem;
+  #footer #footer-nav .box:nth-child(2) ul li,
+#footer #footer-nav .box:nth-child(3) ul li,
+#footer #footer-nav .box:nth-child(4) ul li {
+    padding-bottom: 1.5rem;
   }
 }
 @media (max-width: 1024px) {

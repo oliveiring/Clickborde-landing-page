@@ -88,47 +88,49 @@ body{
 }
 
 /*************Footer**************/
-#footer{
-  @include flex-columns();
-  background:rgb(241, 241, 241);
-  padding:2rem 0;
-  .box:last-child{
-    ul{
-      display: flex;
-      li{
-        padding:0 0.6rem;
-        a{
-          font-size: 1.5rem;
-          color:c.color(--dark-grayish);
-          &:hover{
-            color:c.color(--strong-syan);
+
+  #footer{
+    #footer-nav{
+      @include flex-columns();
+      background:rgb(241, 241, 241);
+      padding:2rem 0;
+      .box:last-child{
+        ul{
+          display: flex;
+          li{
+            padding:0 0.6rem;
+            a{
+              font-size: 1.5rem;
+              color:c.color(--dark-grayish);
+              &:hover{
+                color:c.color(--strong-syan);
+              }
+            }
           }
+        }
+    
+    
+      }
+    
+      .box:nth-child(1){
+        img{width: 50px;}
+      }
+      .box:nth-child(2),
+      .box:nth-child(3),
+      .box:nth-child(4){
+       padding-bottom: 1rem;
+        ul li {
+           a{
+             color: c.color(--dark-grayish);
+             &:hover{
+              color:c.color(--strong-syan);
+             }
+           }
         }
       }
     }
-
-
   }
 
-  .box:nth-child(1){
-    img{width: 50px;}
-  }
-  .box:nth-child(2),
-  .box:nth-child(3),
-  .box:nth-child(4){
-    ul li {
-        padding-bottom: 1rem;
-       a{
-         color: c.color(--dark-grayish);
-         &:hover{
-          color:c.color(--strong-syan);
-         }
-       }
-    }
-  }
-
- 
-}
 /*************Media-Queries**************/
 
 @media(max-width:766px){
@@ -184,27 +186,30 @@ body{
     }
     
   }
-
-
+  
   #footer{
-    @include flex-columns();
-    align-items: center;
-   
+    #footer-nav{
+      @include flex-columns();
+      align-items: center;
+      text-align: center;
+      justify-content: center;
 
-    ul{padding:1rem 0;}
+      .box:nth-child(1),
+      .box:last-child{
+        padding-bottom:1rem;
+       }
 
-   
-    .box:nth-child(2),
-    .box:nth-child(3),
-    .box:nth-child(4){
-      ul li {
-          padding-bottom: 0rem;
-       
+      .box:nth-child(2),
+      .box:nth-child(3),
+      .box:nth-child(4){
+        ul li {
+            padding-bottom:1.5rem;
+        }
       }
     }
-  
-   
   }
+
+
 }
 
 @media(max-width:1024px){
