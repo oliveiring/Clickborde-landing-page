@@ -19,7 +19,7 @@ $colors:(
   margin:1rem;
   display: inline-block;
   opacity:10;
-  transition: all 1s;
+  transition:all 0.3s;
   &:hover{
     opacity:0.3;
   }
